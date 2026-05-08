@@ -1,5 +1,5 @@
 ## Overview
-his dataset includes MEG recordings from Japanese native speakers who read Japanese newspaper articles word by word. This dataset is part of BCCWJ-Brain; three types of brain data — fMRI, MEG, and EEG — were acquired from separate groups of participants using the same stimuli, enabling cross-modality comparisons of language processing with high spatial and temporal resolution respectively.
+This dataset includes MEG recordings from Japanese native speakers who read Japanese newspaper articles word by word. This dataset is part of BCCWJ-Brain; three types of brain data — fMRI, MEG, and EEG — were acquired from separate groups of participants using the same stimuli, enabling cross-modality comparisons of language processing with high spatial and temporal resolution respectively.
 The BCCWJ-Brain collection consists of the following datasets:
 
 - BCCWJ-fMRI: ds007752
