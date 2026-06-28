@@ -1,0 +1,26 @@
+{
+    "TaskName": "BCCWJ Reading",
+    "Manufacturer": "KIT/Yokogawa",
+    "PowerLineFrequency": 50.0,
+    "SamplingFrequency": 1000.0,
+    "SoftwareFilters": {
+        "SpatialCompensation": {
+            "GradientOrder": 0
+        }
+    },
+    "RecordingDuration": 2209.999,
+    "RecordingType": "continuous",
+    "DewarPosition": "n/a",
+    "DigitizedLandmarks": false,
+    "DigitizedHeadPoints": false,
+    "MEGChannelCount": 200,
+    "MEGREFChannelCount": 9,
+    "ContinuousHeadLocalization": false,
+    "HeadCoilFrequency": [],
+    "EEGChannelCount": 0,
+    "EOGChannelCount": 0,
+    "ECGChannelCount": 0,
+    "EMGChannelCount": 0,
+    "MiscChannelCount": 17,
+    "TriggerChannelCount": 0
+}
