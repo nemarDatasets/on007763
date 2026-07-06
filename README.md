@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on007763-blue)](https://doi.org/10.82901/nemar.on007763)
+
 
 ## Overview
 This dataset includes MEG recordings from Japanese native speakers who read Japanese newspaper articles word by word. This dataset is part of BCCWJ-Brain; three types of brain data (fMRI, MEG, and EEG) were acquired from separate groups of participants using the same stimuli, enabling cross-modality comparisons of language processing with high spatial and temporal resolution respectively.
