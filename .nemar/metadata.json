@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "BCCWJ-MEG",
-  "description": "This dataset comprises magnetoencephalography (MEG) recordings from 35 Japanese native speakers reading newspaper articles presented word-by-word. Part of the BCCWJ-Brain collection, it enables cross-modality comparisons of language processing by providing high temporal resolution neural data acquired alongside fMRI and EEG from separate participant groups using identical stimuli. The dataset includes both raw and preprocessed MEG data, anatomical MRI, and detailed documentation of acquisition and analysis procedures.",
-  "methods_description": "MEG data were acquired using a 200-channel whole-head MEG system with axial gradiometers at 1,000 Hz sampling rate with 200 Hz online low-pass filtering. Stimuli (20 Japanese newspaper articles) were presented word-by-word via rapid serial visual presentation (RSVP) at 500 ms per word with 500 ms inter-stimulus intervals. Preprocessing included CALM filtering, ICA-based artifact removal, 0.1–40 Hz bandpass filtering, epoching (−100 to 1,000 ms relative to word onset), downsampling to 200 Hz, and baseline correction. T1-weighted anatomical images were also acquired and defaced using PyDeface.",
+  "description": "This dataset comprises magnetoencephalography (MEG) recordings from 35 Japanese native speakers (13 females, 22 males; mean age 21.7 ± 2.75 years) reading newspaper articles presented word-by-word. Part of the BCCWJ-Brain collection, it enables cross-modality comparisons of language processing by providing high temporal resolution neural data acquired using identical stimuli across MEG, fMRI, and EEG modalities. The dataset includes raw and preprocessed MEG data, anatomical MRI images, and detailed documentation of acquisition and analysis procedures. Note: Stimulus texts from the Balanced Corpus of Contemporary Written Japanese (BCCWJ) are not included due to copyright restrictions; users must register separately with BCCWJ to obtain access to the texts.",
+  "methods_description": "Continuous MEG was recorded using a 200-channel whole-head system with axial gradiometers at 1,000 Hz sampling rate with 200 Hz online low-pass filtering. T1-weighted structural images were acquired with 1 mm slice thickness, 256 × 256 mm field of view, 368 × 368 matrix, TR = 1,100 ms, and TE = 5.1 ms; facial structures were removed using PyDeface. Stimuli (20 Japanese newspaper articles from BCCWJ) were presented word-by-word via rapid serial visual presentation (RSVP) at 500 ms per word with 500 ms inter-stimulus intervals using PsychoPy. MEG preprocessing included CALM filtering, ICA artifact removal, 0.1–40 Hz bandpass filtering, epoching (−100 to 1,000 ms relative to word onset), downsampling to 200 Hz, and baseline correction using MNE-Python and Eelbrain. Preprocessed data are provided in the derivatives folder.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,43 +19,46 @@
       "term": "MEG"
     },
     {
+      "term": "magnetoencephalography"
+    },
+    {
       "term": "language processing"
     },
     {
       "term": "reading"
     },
     {
+      "term": "word-by-word reading"
+    },
+    {
       "term": "Japanese"
     },
     {
-      "term": "word recognition"
+      "term": "RSVP"
     },
     {
-      "term": "temporal response functions"
+      "term": "neuroimaging"
     },
     {
-      "term": "cross-modality neuroimaging"
+      "term": "cross-modal comparison"
     },
     {
       "term": "BCCWJ"
     },
     {
-      "term": "rapid serial visual presentation"
+      "term": "anatomical MRI"
     },
     {
-      "term": "axial gradiometer"
+      "term": "structural MRI"
     },
     {
-      "term": "newspaper articles"
+      "term": "T1-weighted"
     },
     {
-      "term": "text stimuli"
+      "term": "preprocessing"
     },
     {
-      "term": "ICA artifact removal"
-    },
-    {
-      "term": "bandpass filtering"
+      "term": "derivatives"
     }
   ],
   "related_identifiers": [
