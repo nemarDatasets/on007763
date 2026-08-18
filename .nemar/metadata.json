@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "BCCWJ-MEG",
-  "description": "This dataset comprises magnetoencephalography (MEG) recordings from 35 Japanese native speakers (13 females, 22 males; mean age 21.7 ± 2.75 years) reading newspaper articles presented word-by-word. Part of the BCCWJ-Brain collection, it enables cross-modality comparisons of language processing by providing high temporal resolution neural data acquired using identical stimuli across MEG, fMRI, and EEG modalities. The dataset includes raw and preprocessed MEG data, anatomical MRI images, and detailed documentation of acquisition and analysis procedures. Note: Stimulus texts from the Balanced Corpus of Contemporary Written Japanese (BCCWJ) are not included due to copyright restrictions; users must register separately with BCCWJ to obtain access to the texts.",
-  "methods_description": "Continuous MEG was recorded using a 200-channel whole-head system with axial gradiometers at 1,000 Hz sampling rate with 200 Hz online low-pass filtering. T1-weighted structural images were acquired with 1 mm slice thickness, 256 × 256 mm field of view, 368 × 368 matrix, TR = 1,100 ms, and TE = 5.1 ms; facial structures were removed using PyDeface. Stimuli (20 Japanese newspaper articles from BCCWJ) were presented word-by-word via rapid serial visual presentation (RSVP) at 500 ms per word with 500 ms inter-stimulus intervals using PsychoPy. MEG preprocessing included CALM filtering, ICA artifact removal, 0.1–40 Hz bandpass filtering, epoching (−100 to 1,000 ms relative to word onset), downsampling to 200 Hz, and baseline correction using MNE-Python and Eelbrain. Preprocessed data are provided in the derivatives folder.",
+  "description": "This dataset comprises MEG recordings from 35 Japanese native speakers who read Japanese newspaper articles word by word, as part of the BCCWJ-Brain collection. Alongside fMRI and EEG datasets acquired from separate groups using the same stimuli, this MEG dataset enables cross-modality comparisons of language processing with high temporal resolution. Structural T1-weighted MRI images were also collected for source localization purposes.",
+  "methods_description": "Continuous MEG was recorded with a 200-channel whole-head MEG system with axial gradiometers (RIOCH Ltd., Tokyo, Japan) in a shielded room at a sampling rate of 1,000 Hz with an online low-pass filter of 200 Hz. T1-weighted images were collected with slice thickness of 1 mm, field of view of 256 × 256 mm, matrix size of 368 × 368, TR of 1,100 ms, and TE of 5.1 ms; facial structures were removed using PyDeface. Stimuli (20 Japanese newspaper articles) were presented word by word via RSVP in PsychoPy, each for 500 ms followed by a 500 ms blank screen, in randomized article order. Preprocessing used MNE-Python and Eelbrain: a CALM filter was applied, data were combined with digitized files and converted to raw.fif, ICA was applied to remove ocular artifacts on 0.1–40 Hz bandpass filtered data, epochs were extracted from -100 to 1000 ms relative to word onset, downsampled to 200 Hz, and baseline-corrected using the -100 to 0 ms interval.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,46 +19,33 @@
       "term": "MEG"
     },
     {
-      "term": "magnetoencephalography"
-    },
-    {
       "term": "language processing"
     },
     {
       "term": "reading"
     },
     {
-      "term": "word-by-word reading"
-    },
-    {
       "term": "Japanese"
     },
     {
-      "term": "RSVP"
+      "term": "psycholinguistics"
     },
     {
-      "term": "neuroimaging"
-    },
-    {
-      "term": "cross-modal comparison"
+      "term": "rapid serial visual presentation"
     },
     {
       "term": "BCCWJ"
     },
     {
-      "term": "anatomical MRI"
+      "term": "corpus linguistics"
     },
     {
       "term": "structural MRI"
     },
     {
-      "term": "T1-weighted"
-    },
-    {
-      "term": "preprocessing"
-    },
-    {
-      "term": "derivatives"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     }
   ],
   "related_identifiers": [
@@ -75,12 +62,12 @@
     {
       "identifier": "10.18112/openneuro.ds007752",
       "identifier_type": "DOI",
-      "relation_type": "IsPartOf"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds007753",
       "identifier_type": "DOI",
-      "relation_type": "IsPartOf"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1109/77.919433",
