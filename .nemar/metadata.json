@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCCWJ-MEG",
-  "description": "This dataset comprises magnetoencephalography (MEG) recordings from 35 Japanese native speakers who read Japanese newspaper articles word by word, presented via rapid serial visual presentation. It forms part of the BCCWJ-Brain collection, which includes fMRI, MEG, and EEG data from separate participant groups exposed to the same stimuli, enabling cross-modal comparisons of language processing at high spatial and temporal resolution. T1-weighted structural images were also acquired for source localization purposes.",
-  "methods_description": "Continuous MEG was recorded with a 200-channel whole-head MEG system using axial gradiometers at a sampling rate of 1,000 Hz with an online low-pass filter of 200 Hz. T1-weighted structural images were collected and defaced using PyDeface. Stimuli (twenty Japanese newspaper articles) were presented word by word via RSVP in PsychoPy, each word shown for 500 ms followed by a 500 ms blank screen. Preprocessing was performed using MNE-Python and Eelbrain, including CALM filtering, ICA-based artifact removal, 0.1–40 Hz bandpass filtering, epoching (-100 to 1000 ms relative to word onset), downsampling to 200 Hz, and baseline correction.",
+  "description": "BCCWJ-MEG contains magnetoencephalography recordings from 35 native Japanese speakers who read Japanese newspaper articles word by word. It is one part of the BCCWJ-Brain collection, which also includes fMRI and EEG datasets acquired from separate participant groups with the same stimuli, allowing cross-modality comparison of language processing. Raw data, T1-weighted anatomical images, and preprocessed derivatives (CALM-filtered, ICA-cleaned, and evoked files) are provided.",
+  "methods_description": "Continuous MEG was recorded with a 200-channel axial gradiometer whole-head system (RICOH) in a shielded room at 1,000 Hz. Twenty newspaper articles were presented word by word using RSVP in PsychoPy, with 500 ms per word followed by a 500 ms blank. Preprocessing used MNE-Python and Eelbrain, including CALM noise reduction, ICA-based ocular artifact removal, 0.1-40 Hz bandpass filtering, epoching from -100 to 1000 ms, and downsampling to 200 Hz. T1-weighted images were defaced with PyDeface.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,19 +21,22 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
     {
-      "term": "Japanese language processing"
+      "term": "MEG"
+    },
+    {
+      "term": "language processing"
     },
     {
       "term": "reading"
     },
     {
-      "term": "language comprehension"
+      "term": "Japanese"
     },
     {
-      "term": "MEG"
+      "term": "naturalistic text"
     },
     {
-      "term": "psycholinguistics"
+      "term": "BCCWJ"
     }
   ],
   "related_identifiers": [
@@ -94,7 +97,7 @@
     "meg"
   ],
   "sizes": [
-    "177.7 GB (287 files)"
+    "166 GB (287 files)"
   ],
   "formats": [
     ".con",
